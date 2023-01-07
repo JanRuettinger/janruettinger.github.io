@@ -1,0 +1,34 @@
+baseURL = "http://www.janruettinger.com/"
+defaultContentLanguage = "en"
+languageCode = "en"
+
+title = "Jan Ruettinger's Website"
+
+theme = "gokarna"
+
+# Automatically generate robots.txt
+enableRobotsTXT = true
+
+[menu]
+  [[menu.main]]
+    identifier = "github"
+    url = "https://github.com/janruettinger"
+    weight = 3
+    
+    # We use feather-icons: https://feathericons.com/
+    pre = "<span data-feather='github'></span>"
+  
+  [[menu.main]]
+  identifier = "twitter"
+  url = "https://twitter.com/jan_ruettinger"
+  weight = 4
+      pre = "<span data-feather='twitter'></span>"
+
+[params]
+  showPostsOnHomePage = "popular"
+  avatarURL = "/images/avatar.png"
+
+  customHeadHTML = '''
+    <script defer data-domain="janruettinger.com" src="https://plausible.io/js/script.js"></script>
+  '''
+  
